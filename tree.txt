@@ -1,0 +1,79 @@
+│
+├── pyproject.toml
+├── requirements.txt
+├── .gitignore
+│
+├── captures/
+│   ├── xiaomi/
+│   │   ├── connect/
+│   │   ├── settings/
+│   │   └── ota/
+│   ├── ninebot/
+│   ├── kugoo/
+│   └── zt3/
+│
+├── output/
+│
+├── tests/
+│   ├── test_parser.py
+│   ├── test_att.py
+│   ├── test_statistics.py
+│   ├── test_handles.py
+│   ├── test_compare.py
+│   └── data/
+│
+├── scooterlab/
+│   ├── __init__.py
+│   ├── cli.py
+│   ├── config.py
+│   │
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── packet.py
+│   │   ├── session.py
+│   │   ├── service.py
+│   │   └── characteristic.py
+│   │
+│   ├── parser/
+│   │   ├── __init__.py
+│   │   ├── pcap.py
+│   │   ├── att.py
+│   │   ├── gatt.py
+│   │   └── l2cap.py
+│   │
+│   ├── analyzer/
+│   │   ├── __init__.py
+│   │   ├── statistics.py
+│   │   ├── handles.py
+│   │   ├── comparator.py
+│   │   ├── sequence.py
+│   │   └── entropy.py
+│   │
+│   ├── protocol/
+│   │   ├── __init__.py
+│   │   ├── generic.py
+│   │   ├── xiaomi.py
+│   │   ├── kugoo.py
+│   │   ├── ninebot.py
+│   │   └── zt3.py
+│   │
+│   ├── exporter/
+│   │   ├── __init__.py
+│   │   ├── json_export.py
+│   │   ├── markdown.py
+│   │   └── html.py
+│   │
+│   ├── signatures/
+│   │   ├── commands.json
+│   │   ├── uuids.json
+│   │   └── ota.json
+│   │
+│   └── utils/
+│       ├── hex.py
+│       ├── crc.py
+│       └── bytes.py
+│
+└── docs/
+    ├── protocol.md
+    ├── ota.md
+    └── architecture.md
